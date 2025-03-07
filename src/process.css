@@ -91,6 +91,79 @@ span {
     color: #003E76;
     margin-bottom: 60px;
 }
+/* page p6 */
+.page.p6 .text-box h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #003E76;
+    margin-bottom: 25px;
+}
+.page.p6 .text-box span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #6f6f6f;
+    letter-spacing: -0.04em;
+    line-height: 1.455;
+}
+.page.p6 .text-box span p1 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #404040;
+}
+/* page p7 */
+.page.p7 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #003E76;
+    opacity: 80%;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+}
+
+/* page p10 */
+.page.p10 .all-list .list1 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #003E76;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    opacity: 0.8;
+}
+.page.p10 .all-list .list2 h2 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #003E76;
+    letter-spacing: -0.04em;
+    line-height: 1.5;
+}
+.page.p10 .all-list .list3 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #404040;
+    letter-spacing: -0.04em;
+    line-height: 1.6;
+}
+/* page p11 */
+.page.p11 .text-box h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #003E76;
+    margin-bottom: 28px;
+}
+.page.p11 .text-box .grid-list span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: #404040;
+    letter-spacing: 0.01em;
+}
 /* ----------css--------- */
 /* page p1 */
 .page.p1 {
@@ -315,4 +388,214 @@ span {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.page.p6 .text-box {
+    position: absolute;
+    top: 176px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1460px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.page.p6 .text-box h1 {
+    width: 595px;
+}
+.page.p6 .text-box img {
+    position: absolute;
+    top: -10px;
+    left: 830px;
+    z-index: -1;
+}
+
+/* page p7-9 */
+.page.p7-9 {
+    width: 100%;
+    background-image: url(img/process/img-7-9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* page p10 */
+.page.p7 {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.page.p7 h1 {
+    width: 1644px;
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: end;
+}
+.page.p7 .contents-box {
+    width: 1622px;
+    height: 833px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page.p7 .contents-box .list.l1 {
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+.page.p7 .contents-box .list.l2 {
+    position: absolute;
+    right: 0;
+    top: 380px;
+}
+.page.p7 .contents-box .list.l3 {
+    position: absolute;
+    top: 526px;
+    left: 0px;
+}
+.page.p7 .contents-box .list.l4 {
+    position: absolute;
+    top: 500px;
+    right: 0;
+}
+/* page p8 */
+.page.p8 {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p8 .contents-box {
+    width: 1644px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+.page.p8 .contents-box .list.l5 {
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
+.page.p8 .contents-box .list.l5-1 {
+    position: absolute;
+    right: -10px;
+    top: 252px;
+    z-index: -1;
+}
+.page.p8 .contents-box .list.l6 {
+    position: absolute;
+    right: 0;
+    top: 558px;
+}
+.page.p8 .contents-box .list.l7 {
+    position: absolute;
+    left: 0;
+    top: 556px;
+}
+.page.p8 .contents-box .list.l8 {
+    position: absolute;
+    right: 0;
+    top: 768px;
+}
+.page.p8 .contents-box .list.l9 {
+    position: absolute;
+    left: 0;
+    top: 800px;
+}
+/* page p9 */
+.page.p9 {
+    width: 100%;
+    height: 878px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.page.p9 .contents-box {
+    width: 1644px;
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page.p9 .contents-box .list.l10 {
+    position: absolute;
+    right: 0px;
+    top: 210px;
+}
+.page.p9 .contents-box .list.l11 {
+    position: absolute;
+    right: 0px;
+    top: 358px;
+}
+.page.p9 .contents-box .list.l12 {
+    position: absolute;
+    left: 0px;
+    top: 560px;
+}
+/* page p10 */
+.page.p10 {
+    width: 100%;
+    height: 1080px;
+    background-image: url(img/process/img-10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page.p10 .all-list {
+    width: 1650px;
+    position: absolute;
+    top: 121px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page.p10 .all-list .list1 {
+    margin-bottom: 86px;
+}
+.page.p10 .all-list .list2 {
+    margin-bottom: 78px;
+}
+.page.p10 .all-list .list2 img {
+    margin-left: -11px;
+}
+.page.p10 .all-list .list3 {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+/* page p11 */
+.page.p11 {
+    width: 100%;
+    height: 1080px;
+    background-image: url(img/process/img-11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page.p11 .all-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.page.p11 .all-box .text-box {
+    position: relative;
+}
+.page.p11 .all-box .text-box img {
+    position: absolute;
+    top: -10px;
+    left: -36px;
+    z-index: -1;
 }
