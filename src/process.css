@@ -165,6 +165,14 @@ span {
     letter-spacing: 0.01em;
 }
 /* ----------css--------- */
+/* page p1 wow */
+.page.p1 .main-box {
+    opacity: 0;
+    transition: opacity 0.8s 0.3s;
+}
+.page.p1 .main-box.animated {
+    opacity: 1;
+}
 /* page p1 */
 .page.p1 {
     width: 100%;
@@ -237,7 +245,58 @@ span {
     align-items: center;
     gap: 46px;
 }
+/* page p2 wow */
+.page.p2 .text-box .box.s1 h1 {
+    opacity: 0;
+    transition: all 1s 0.6s;
+    transform: translateX(4%);
+}
+.page.p2 .text-box .box.s1 h1.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+.page.p2 .text-box .box.s1 span {
+    opacity: 0;
+    transition: all 1s 0.8s;
+    transform: translateY(-10%);
+}
+.page.p2 .text-box .box.s1 span.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.page.p2 .text-box .box.s1 img {
+    opacity: 0;
+    transition: all 1s 0.8s;
+}
+.page.p2 .text-box .box.s1 img.animated {
+    opacity: 1;
+}
 
+.page.p2 .text-box .box.s2 h1 {
+    opacity: 0;
+    transition: all 1s 0.8s;
+    transform: translateX(4%);
+}
+.page.p2 .text-box .box.s2 h1.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+.page.p2 .text-box  .box.s2 span {
+    opacity: 0;
+    transition: all 1s 1.0s;
+    transform: translateY(-10%);
+}
+.page.p2 .text-box .box.s2 span.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.page.p2 .text-box .box.s2 img {
+    opacity: 0;
+    transition: all 1s 1.0s;
+}
+.page.p2 .text-box .box.s2 img.animated {
+    opacity: 1;
+}
 /* page p2 */
 .page.p2 {
     width: 100%;

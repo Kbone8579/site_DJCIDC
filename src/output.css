@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.11 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.12 | MIT License | https://tailwindcss.com */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @layer theme, base, components, utilities;
 @layer theme {
@@ -232,9 +232,6 @@
   }
   .isolation-auto {
     isolation: auto;
-  }
-  .z-4 {
-    z-index: 4;
   }
   .z-auto {
     z-index: auto;
