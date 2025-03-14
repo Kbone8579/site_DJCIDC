@@ -75,9 +75,11 @@ span {
 .page.p1 .contents > .nav > li > ul {
   display: none;
   position: absolute;
-  top: 130px;
+  top: 127px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
+  padding-top: 36px;
   border: 1px solid red;
 }
 .page.p1 .contents > .nav > li > ul > li {
@@ -98,4 +100,10 @@ span {
   border-radius: 0 0 50px 50px;
   position: absolute;
   border: 1px solid blue;
+}
+.page.p1 .top-bar .contents-sub .title-box {
+  width: 415px;
+  height: 450px;
+  background-color: #003E76;
+  border-radius: 0 50px 0 50px;
 }

@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-100: oklch(0.936 0.032 17.717);
     --color-red-500: oklch(0.637 0.237 25.331);
     --spacing: 0.25rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -1047,9 +1046,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-red-100 {
-    background-color: var(--color-red-100);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1847,9 +1843,11 @@ span {
 .page.p1 .contents > .nav > li > ul {
   display: none;
   position: absolute;
-  top: 130px;
+  top: 127px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
+  padding-top: 36px;
   border: 1px solid red;
 }
 .page.p1 .contents > .nav > li > ul > li {
@@ -1867,6 +1865,12 @@ span {
   border-radius: 0 0 50px 50px;
   position: absolute;
   border: 1px solid blue;
+}
+.page.p1 .top-bar .contents-sub .title-box {
+  width: 415px;
+  height: 450px;
+  background-color: #003E76;
+  border-radius: 0 50px 0 50px;
 }
 @property --tw-translate-x {
   syntax: "*";
