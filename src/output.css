@@ -1902,6 +1902,7 @@ span {
   border-radius: 0 0 50px 50px;
   border: 1px solid blue;
   overflow: hidden;
+  display: none;
 }
 .page.p1 .top-bar .contents-sub .title-box {
   width: 415px;

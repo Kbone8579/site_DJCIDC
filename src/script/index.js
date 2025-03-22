@@ -57,6 +57,18 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// main page navigation hover 
+$(document).ready(function(){
+  $(".page.p1 .contents > .nav > .topbar-title1").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s1").css('display', 'block');
+  });
+  $(".page.p1 .contents > .nav > .topbar-title1").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s1").css('display', 'none');
+  });
+});
+
+
+
 // 오브젝트 애니메이션 AOS
 $(document).ready(function(){
     new WOW().init();

@@ -134,6 +134,7 @@ span {
   /* position: absolute; */
   border: 1px solid blue;
   overflow: hidden;
+  display: none;
 }
 .page.p1 .top-bar .contents-sub .title-box {
   width: 415px;
