@@ -84,6 +84,9 @@ span {
   justify-content: center;
   position: relative;
 }
+.page.p1 .contents > .nav:hover ul {
+  display: block;
+}
 .page.p1 .contents > .nav > li:hover ul {
   display: block;
 }
