@@ -14,15 +14,15 @@ span {
 
 /* font */
 /* pgae p1 */
-.page.p1 .top-bar .contents > ul > li > a {
+.page.p1 .top-bar .contents .main-nav > ul > li > a {
   font-family: "Pretendard Variable", sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #333;
 }
-.page.p1 .top-bar .contents ul ul > li > a {
+.page.p1 .top-bar .contents .main-nav > ul ul > li > a {
   font-family: "Pretendard Variable", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     color: #333;
     letter-spacing: -0.02em;
@@ -69,51 +69,34 @@ span {
   justify-content: center;
   align-items: center;
 }
-.page.p1 .contents > .nav {
+.page.p1 .contents > .main-nav {
   width: 802px;
-  height: 130px;
-  position: relative;
+}
+.page.p1 .contents > .main-nav > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   border: 1px solid red;
 }
-.page.p1 .contents > .nav > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.page.p1 .contents > .main-nav > ul > li {
+  border: 1px solid red;
   position: relative;
 }
-.page.p1 .contents > .nav:hover ul {
-  display: block;
-}
-.page.p1 .contents > .nav > li:hover ul {
-  display: block;
-}
-.page.p1 .contents > .nav > li > a {
+.page.p1 .contents > .main-nav > ul > li > a {
   width: 100%;
+  height: 130px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.page.p1 .contents > .nav > li > .nav-line {
-  width: 1px;
-  height: 16px;
-  background-color: #b2b9c5;
-}
-.page.p1 .contents > .nav > li > ul {
-  display: none;
+.page.p1 .contents > .main-nav > ul > li > ul {
   position: absolute;
-  top: 127px;
+  top: 130px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
-  padding-top: 36px;
-  border: 1px solid red;
 }
-.page.p1 .contents > .nav > li > ul > li {
-  margin-bottom: 36px;
-}
-.page.p1 .contents > .nav > li > ul > li > a {
+.page.p1 .contents > .main-nav > ul > li > ul > li {
+  margin-top: 36px;
 }
 .page.p1 .top-bar .contents > .sub-site {
   width: 258px;
@@ -129,6 +112,10 @@ span {
   width: 24px;
   height: 24px;
 }
+.page.p1 .top-bar .bg-nav {
+  position: absolute;
+  display: none;
+}
 .page.p1 .top-bar .contents-sub {
   width: 100%;
   height: 450px;
@@ -137,7 +124,7 @@ span {
   /* position: absolute; */
   border: 1px solid blue;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 .page.p1 .top-bar .contents-sub .title-box {
   width: 415px;
