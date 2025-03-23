@@ -59,11 +59,35 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // main page navigation hover 
 $(document).ready(function(){
-  $(".page.p1 .contents > .nav > .topbar-title1").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub").addClass('active');
+  $(".page.p1 .contents > .main-nav .topbar-title1").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '1');
   });
-  $(".page.p1 .contents > .nav > .topbar-title1").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s1").css('display', 'none');
+  $(".page.p1 .contents > .main-nav .topbar-title1").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title2").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title2").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title3").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title3").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title4").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title4").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title5").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title5").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '0');
   });
 });
 
