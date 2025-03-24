@@ -4,6 +4,28 @@
 /* tailwind */
 @import "tailwindcss";
 
+/* Desktop (above 1020px) layout */
+@media (min-width: 1021px) {
+  /* .filters-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+      background-color: #1a4c7c;
+      border-radius: 8px;
+      padding: 15px;
+  }
+  .filters-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+  } */
+  
+}
 /* reset */
 body {
   white-space: nowrap;
@@ -11,7 +33,6 @@ body {
 span {
   display: block;
 }
-
 /* font */
 /* pgae p1 */
 .page.p1 .top-bar .contents .main-nav > ul > li > a {
@@ -264,22 +285,21 @@ span {
 
 
 /* page p1 search-box */
-/* Base container for all layouts */
-.filter-container {
-  max-width: 1920px;
-  margin: 0 158px;
-  margin-top: 745px;
-}
-/* Mobile (1020px and below) layout */
-.filter-mobile {
+.search-box {
+  width: calc(100% - 330px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 28px;
   display: grid;
-  grid-template-columns: 180px 1fr 120px 210px;
-  background-color: rgba(0, 62, 118, 0.9);
+  grid-template-columns: 160px 1fr 146px 210px;
   border-radius: 12px;
   overflow: hidden;
+  background-color: rgba(0, 62, 118, 0.9);
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
-
-.title {
+.title-box {
   color: white;
   padding: 20px;
   display: flex;
@@ -288,28 +308,24 @@ span {
   font-weight: bold;
   text-align: center;
 }
-
-.filters-wrapper {
+.search-list {
   background-color: white;
-  padding: 15px;
+  padding: 22px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 18px;
+  z-index: 20;
 }
-.filters-wrapper .filter-item {
+.search-list .filter-item {
   display: flex;
   align-items: center;
 }
 .search-button {
-  background-color: white;
-  color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  cursor: pointer;
-
   padding-right: 15px;
+
+  background-color: white;
 }
 .search-button h1 {
   width: 100%;
@@ -323,7 +339,7 @@ span {
   font-weight: bold;
   cursor: pointer;
 }
-.counter {
+.counter-box {
   color: white;
   padding: 20px;
   display: flex;
@@ -357,27 +373,4 @@ select {
   background-repeat: no-repeat;
   background-position: right 8px center;
   background-size: 16px;
-}
-
-/* Desktop (above 1020px) layout */
-@media (min-width: 1021px) {
-  .filter-desktop {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 10px;
-      align-items: center;
-      background-color: #1a4c7c;
-      border-radius: 8px;
-      padding: 15px;
-  }
-
-  .filters-desktop {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      background-color: white;
-      padding: 10px;
-      border-radius: 5px;
-  }
 }
