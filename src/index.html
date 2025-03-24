@@ -30,18 +30,18 @@
   </head>
   <body>
     <div class="page p1">
-      <div class="top-bar">
-        <div class="contents">
+      <div class="top-bar group">
+        <div class="contents group-hover:bg-white">
           <div class="logo-box">
             <a class="main-logo" href="#"
               ><img src="img/logo/DJCIDC-mainlogo.png" alt="메인로고"
             /></a>
           </div>
-          <nav class="main-nav group">
+          <nav class="main-nav">
             <ul>
               <li class="topbar-title1">
                 <a href="#">지원단 소개</a>
-                <ul class="hidden group-hover:block">
+                <ul class="overflow-hidden h-[0px] group-hover:h-[450px] transition-all duration-300">
                   <li><a href="#">인사말</a></li>
                   <li><a href="#">설립목적 및 연혁</a></li>
                   <li><a href="#">CI소개</a></li>
@@ -52,7 +52,7 @@
               </li>
               <li class="topbar-title2">
                 <a href="#">감염병 정보</a>
-                <ul class="hidden group-hover:block">
+                <ul class="overflow-hidden h-[0px] group-hover:h-[450px] transition-all duration-300">
                   <li><a href="#">법정 감염병</a></li>
                   <li><a href="#">감염병 사전</a></li>
                   <li><a href="#">감염병관련 지침</a></li>
@@ -62,7 +62,7 @@
               </li>
               <li class="topbar-title3">
                 <a href="#">감염병 현황</a>
-                <ul class="hidden group-hover:block">
+                <ul class="overflow-hidden h-[0px] group-hover:h-[450px] transition-all duration-300">
                   <li><a href="#">대전시 감염병 현황</a></li>
                   <li><a href="#">코로나19 현황</a></li>
                   <li><a href="#">해외감염병 발생동향</a></li>
@@ -72,7 +72,7 @@
               </li>
               <li class="topbar-title4">
                 <a href="#">자료실</a>
-                <ul class="hidden group-hover:block">
+                <ul class="overflow-hidden h-[0px] group-hover:h-[450px] transition-all duration-300">
                   <li><a href="#">홍보자료</a></li>
                   <li><a href="#">영상자료</a></li>
                   <li><a href="#">교육자료</a></li>
@@ -82,7 +82,7 @@
               </li>
               <li class="topbar-title5">
                 <a href="#">알림마당</a>
-                <ul class="hidden group-hover:block">
+                <ul class="overflow-hidden h-[0px] group-hover:h-[450px] transition-all duration-300">
                   <li><a href="#">공지사항</a></li>
                   <li><a href="#">활동 갤러리</a></li>
                   <li><a href="#">교육신청</a></li>
@@ -92,8 +92,8 @@
               </li>
             </ul>
             <!-- nav-bg -->
-            <div class="nav-bg hidden group-hover:block">
-              <div class="contents-sub s1">
+            <div class="nav-bg">
+              <div class="contents-sub s1 h-[0px] group-hover:h-[450px] transition-all duration-300">
                 <div class="title-box">
                   <h1>지원단 소개</h1>
                   <img src="img/icon/navigation-img-1.png" alt="내비게이션 이미지 1">
@@ -103,7 +103,7 @@
                   <img src="img/icon/navigation-img-2.png" alt="내비게이션 이미지 2">
                 </div>
               </div>
-              <div class="contents-sub s2">
+              <div class="contents-sub s2 h-[0px] group-hover:h-[450px] transition-all duration-300">
                 <div class="title-box">
                   <h1>감염병 정보</h1>
                   <img src="img/icon/navigation-img-1.png" alt="내비게이션 이미지 1">
@@ -113,7 +113,7 @@
                   <img src="img/icon/navigation-img-2.png" alt="내비게이션 이미지 2">
                 </div>
               </div>
-              <div class="contents-sub s3">
+              <div class="contents-sub s3 h-[0px] group-hover:h-[450px] transition-all duration-300">
                 <div class="title-box">
                   <h1>감염병 현황황</h1>
                   <img src="img/icon/navigation-img-1.png" alt="내비게이션 이미지 1">
@@ -123,7 +123,7 @@
                   <img src="img/icon/navigation-img-2.png" alt="내비게이션 이미지 2">
                 </div>
               </div>
-              <div class="contents-sub s4">
+              <div class="contents-sub s4 h-[0px] group-hover:h-[450px] transition-all duration-300">
                 <div class="title-box">
                   <h1>자료실</h1>
                   <img src="img/icon/navigation-img-1.png" alt="내비게이션 이미지 1">
@@ -133,7 +133,7 @@
                   <img src="img/icon/navigation-img-2.png" alt="내비게이션 이미지 2">
                 </div>
               </div>
-              <div class="contents-sub s5">
+              <div class="contents-sub s5 h-[0px] group-hover:h-[450px] transition-all duration-300">
                 <div class="title-box">
                   <h1>알림마당</h1>
                   <img src="img/icon/navigation-img-1.png" alt="내비게이션 이미지 1">
@@ -151,7 +151,42 @@
           </ul>
         </div>
       </div>
+      <div class="filter-container">
+        <div class="filter-mobile">
+            <div class="title">감염병 검색</div>
+            <div class="filters-wrapper">
+                <div class="filter-item">
+                    <select>
+                        <option selected disabled>색인별</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <select>
+                        <option selected disabled>증상별</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <select>
+                        <option selected disabled>계절별</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <select>
+                        <option selected disabled>급별</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-button">
+              <h1>검색</h1>
+            </div>
+            <div class="counter">
+                유사 감염병 발견
+                <div class="counter-value">0건</div>
+            </div>
+        </div>
     </div>
-    <div class="page p2"></div>
+    </div>
+    <div class="page p2">
+    
   </body>
 </html>
