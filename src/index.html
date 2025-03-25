@@ -15,10 +15,7 @@
     <!-- script -->
     <script src="script/index.js"></script>
     <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- wow -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -30,7 +27,7 @@
   </head>
   <body>
     <div class="page p1">
-      <div class="top-bar group">
+      <div class="top-bar group z-20">
         <div class="contents group-hover:bg-white">
           <div class="logo-box">
             <a class="main-logo" href="#"
@@ -214,7 +211,27 @@
         </div>
         <div class="counter-box">
                 <h1>유사 감염병 발견</h1>
-                <div class="counter-value">0건</div>
+                <div class="counter-value"><p1>0</p1>건</div>
+        </div>
+      </div>
+      <div class="swiper-box-1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/page-1/slide-1.jpg" alt="슬라이드 이미지 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/page-1/slide-2.jpg" alt="슬라이드 이미지 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/page-1/slide-3.jpg" alt="슬라이드 이미지 3">
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical swiper-pagination-bullets-dynamic" style="height: 200px; width: 20px;">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="top: 32px;" aria-current="true"></span>
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="top: 32px;"></span>
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="top: 32px;"></span>
+          </div>
         </div>
       </div>
     </div>

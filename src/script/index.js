@@ -57,42 +57,6 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// main page navigation hover 
-$(document).ready(function(){
-  $(".page.p1 .contents > .main-nav .topbar-title1").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '1');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title1").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '0');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title2").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '1');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title2").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '0');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title3").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '1');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title3").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '0');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title4").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '1');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title4").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '0');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title5").mouseover(function(){
-    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '1');
-  });
-  $(".page.p1 .contents > .main-nav .topbar-title5").mouseout(function(){
-    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '0');
-  });
-});
-
-
-
 // 오브젝트 애니메이션 AOS
 $(document).ready(function(){
     new WOW().init();
@@ -190,5 +154,59 @@ $(document).ready(function(){
     } else {
       $this.addClass("active");
     }
+  });
+});
+
+
+// main page 
+// main page navigation hover 
+$(document).ready(function(){
+  $(".page.p1 .contents > .main-nav .topbar-title1").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title1").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title2").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title2").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s2 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title3").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title3").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s3 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title4").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title4").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s4 .title-box").css('opacity', '0');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title5").mouseover(function(){
+    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '1');
+  });
+  $(".page.p1 .contents > .main-nav .topbar-title5").mouseout(function(){
+    $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '0');
+  });
+});
+
+// main page slide 
+$(document).ready(function(){
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    effect:'fade',
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
   });
 });

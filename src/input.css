@@ -34,7 +34,8 @@ span {
   display: block;
 }
 /* font */
-/* pgae p1 */
+/* ----- pgae p1 ----- */
+/* page p1 top-bar */
 .page.p1 .top-bar .contents .main-nav > ul > li > a {
   font-family: "Pretendard Variable", sans-serif;
     font-weight: 500;
@@ -123,9 +124,54 @@ span {
 }
 .page.p1 .top-bar .contents-sub .title-box h1 {
   font-family: "Pretendard Variable", sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-    color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  color: #fff;
+}
+/* page p1 search-box */
+.page.p1 .search-box .title-box h1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+}
+.page.p1 .search-box .search-list .filter-item {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #464646;
+}
+.page.p1 .search-box .search-button h1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+.page.p1 .search-box .search-button h1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+.page.p1 .search-box .counter-box h1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.08em;
+}
+.page.p1 .search-box .counter-box .counter-value {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #003E76;
+  letter-spacing: 0.08em;
+}
+.page.p1 .search-box .counter-box .counter-value p1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
 }
 /* css */
 
@@ -133,8 +179,6 @@ span {
 .page.p1 {
   width: 100%;
   height: 1020px;
-  background-color: #fff;
-  background-color: #d9d9d9;
   position: relative;
 }
 
@@ -144,6 +188,9 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .page.p1 .top-bar .contents {
   width: 100%;
@@ -282,10 +329,45 @@ span {
   right: 0;
 }
 
+/* swiper */
+.swiper-box-1 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.swiper {
+  height: 1020px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-box-1 .swiper .swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 40px;
+}
+.swiper-box-1 .swiper .swiper-pagination span {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+.swiper-box-1 .swiper .swiper-pagination span.swiper-pagination-bullet-active-main {
+height: 50px;
+  border-radius: 50px;
+}
 /* page p1 search-box */
-.search-box {
+.page.p1 .search-box {
   width: calc(100% - 330px);
   position: absolute;
   left: 50%;
@@ -298,8 +380,9 @@ span {
   background-color: rgba(0, 62, 118, 0.9);
   padding-top: 3px;
   padding-bottom: 3px;
+  z-index: 100;
 }
-.title-box {
+.page.p1 .search-box .title-box {
   color: white;
   padding: 20px;
   display: flex;
@@ -308,7 +391,7 @@ span {
   font-weight: bold;
   text-align: center;
 }
-.search-list {
+.page.p1 .search-box .search-list {
   background-color: white;
   padding: 22px;
   display: grid;
@@ -316,29 +399,27 @@ span {
   gap: 18px;
   z-index: 20;
 }
-.search-list .filter-item {
+.page.p1 .search-box .search-list .filter-item {
   display: flex;
   align-items: center;
 }
-.search-button {
+.page.p1 .search-box .search-button {
   display: flex;
   align-items: center;
   padding-right: 15px;
   background-color: white;
 }
-.search-button h1 {
+.page.p1 .search-box .search-button h1 {
   width: 100%;
   height: 49px;
   background-color: #4A506B;
-  color: white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   cursor: pointer;
 }
-.counter-box {
+.page.p1 .search-box .counter-box {
   color: white;
   padding: 20px;
   display: flex;
@@ -348,11 +429,12 @@ span {
   text-align: center;
 }
 
-.counter-value {
+.page.p1 .search-box .counter-box .counter-value {
+  width: 80px;
   background: white;
   color: black;
-  border-radius: 15px;
-  padding: 2px 10px;
+  border-radius: 100px;
+  padding: 2px 8px;
   margin-top: 5px;
   display: inline-block;
   font-weight: bold;
