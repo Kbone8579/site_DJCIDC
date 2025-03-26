@@ -226,13 +226,13 @@ $(document).ready(function(){
     effect:'fade',
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
-      clickable: true,
+      clickable: false,
     },
   });
 });
