@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.16 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.17 | MIT License | https://tailwindcss.com */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @layer theme, base, components, utilities;
 @layer theme {
@@ -233,6 +233,9 @@
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .z-20 {
     z-index: 20;
@@ -2191,6 +2194,7 @@ span {
 }
 .page.p1 .swiper {
   height: 1020px;
+  position: relative;
 }
 .page.p1 .swiper-slide {
   display: flex;
@@ -2211,6 +2215,9 @@ span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.page.p1 .swiper-box-1 .swiper .swiper-pagination.swiper-pagination-bullets {
+  width: 20px;
 }
 .page.p1 .swiper-box-1 .swiper .swiper-pagination {
   display: flex;
@@ -2318,26 +2325,26 @@ select {
   height: 700px;
   position: relative;
 }
-.container {
+.page.p2 .container {
   max-width: 1416px;
   margin: 0 auto;
   margin-top: 80px;
 }
-.contents-box {
+.page.p2 .contents-box {
   max-width: 1416px;
   display: flex;
   gap: 60px;
 }
-.section-header {
+.page.p2 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.section-header h2 {
+.page.p2 .section-header h2 {
   font-size: 18px;
   color: #333;
 }
-.section-header .list-box {
+.page.p2 .section-header .list-box {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -2355,13 +2362,13 @@ select {
 .page.p2 .container .contents-box .section-header .list-box a:hover {
   transform: rotate(90deg);
 }
-.nav-buttons {
+.page.p2 .nav-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 48px;
 }
-.nav-buttons button {
+.page.p2 .nav-buttons button {
   background: none;
   border: none;
   color: #666;
@@ -2381,7 +2388,7 @@ select {
   left: -10px;
   border-radius: 100%;
 }
-.contents-box .news-box .news-list {
+.page.p2 .contents-box .news-box .news-list {
   border: 1px solid #D9D9D9;
   border-radius: 20px;
   margin-top: 29px;
@@ -2395,7 +2402,7 @@ select {
 .page.p2 .container .contents-box .news-box .news-list.active {
   display: flex;
 }
-.news-list .news-item {
+.page.p2 .news-list .news-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2403,15 +2410,15 @@ select {
   padding-bottom: 22px;
   border-bottom: 1px solid #f0f0f0;
 }
-.news-list .news-item:hover {
+.page.p2 .news-list .news-item:hover {
   background-color: #f9f9f9;
 }
-.news-list .news-item .item {
+.page.p2 .news-list .news-item .item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.news-category {
+.page.p2 .news-category {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2420,7 +2427,7 @@ select {
   margin-right: 30px;
   padding: 5px 13px;
 }
-.ranking-number {
+.page.p2 .ranking-number {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -2431,10 +2438,10 @@ select {
   justify-content: center;
   margin-right: 20px;
 }
-.ranking-number.inactive {
+.page.p2 .ranking-number.inactive {
   background-color: #9b9b9b;
 }
-.ranking-box .ranking-list {
+.page.p2 .ranking-box .ranking-list {
   border: 1px solid #D9D9D9;
   border-radius: 20px;
   margin-top: 29px;
@@ -2443,7 +2450,7 @@ select {
   flex-direction: column;
   gap: 15px;
 }
-.ranking-box .ranking-item {
+.page.p2 .ranking-box .ranking-item {
   width: 100%;
   background-color: #F4F4F4;
   border-radius: 500px;
@@ -2452,7 +2459,7 @@ select {
   padding: 10px;
   transition: all 0.2s;
 }
-.ranking-box .ranking-item:hover {
+.page.p2 .ranking-box .ranking-item:hover {
   background-color: #e4e4e4;
 }
 .page.p2 .ranking-box .ranking-item:hover span {
@@ -2495,23 +2502,29 @@ select {
   }
 }
 @media screen and (max-width: 1021px) {
-  .contents-box {
+  .page.p1 .top-bar.main {
+    display: none;
+  }
+  .page.p1 .top-bar.sub {
+    visibility: visible;
+  }
+  .page.p2 .contents-box {
     flex-direction: column;
     margin: 0 23px;
   }
-  .news-box .section-header {
+  .page.p2 .news-box .section-header {
     justify-content: end;
     align-items: center;
   }
-  .news-box .section-header .list-box {
+  .page.p2 .news-box .section-header .list-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  .section-header .list-box .nav-buttons {
+  .page.p2 .section-header .list-box .nav-buttons {
     gap: 40px;
   }
-  .nav-buttons {
+  .page.p2 .nav-buttons {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -2553,15 +2566,15 @@ select {
     border-radius: 10px;
     margin-bottom: 20px;
   }
-  .news-box .section-header {
+  .page.p2 .news-box .section-header {
     flex-direction: column;
     align-items: start;
   }
-  .section-header .list-box {
+  .page.p2 .section-header .list-box {
     justify-content: space-between;
     margin-top: 20px;
   }
-  .section-header .list-box .nav-buttons {
+  .page.p2 .section-header .list-box .nav-buttons {
     gap: 20px;
     justify-content: start;
   }

@@ -222,6 +222,7 @@ $(document).ready(function(){
 // main page slide 
 $(document).ready(function(){
   var swiper = new Swiper(".mySwiper", {
+    // direction: "horizontal", // 1381px 이하에서는 가로 방향
     direction: "vertical",
     effect:'fade',
     autoplay: {
@@ -232,7 +233,12 @@ $(document).ready(function(){
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
-      clickable: false,
+      clickable: true,
     },
+    // breakpoints: {
+    //   1381: {
+    //     direction: "vertical",
+    //   }
+    // },
   });
 });
