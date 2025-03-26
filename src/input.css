@@ -192,11 +192,62 @@ span {
   font-size: 44px;
   color: #333333;
 }
+.page.p2 .container .contents-box .news-box .section-header .nav-buttons button {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #6d6d6d;
+  transition: all 0.2s;
+}
+.page.p2 .container .contents-box .news-box .section-header .nav-buttons button:hover {
+  color: #000;
+}
 .page.p2 .container .contents-box .ranking-box .section-header h2 p1 {
   font-family: "Pretendard Variable", sans-serif;
   font-weight: 600;
   font-size: 44px;
   color: #00B6CC;
+}
+.page.p2 .news-category.public {
+  background-color: #003E76;
+  color: white;
+}
+.page.p2 .news-category.research {
+  background-color: #61B85D;
+  color: white;
+}
+.page.p2 .news-category.press {
+  background-color: #00B6CC;
+  color: white;
+}
+.page.p2 .news-category.education {
+  background-color: #00ADEC;
+  color: white;
+}
+.page.p2 .news-box .news-list .news-item .item span:nth-child(2) {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  letter-spacing: -0.04em;
+}
+.page.p2 .news-box .news-list .news-item > .news-date {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #a9a9a9;
+}
+.page.p2 .ranking-box .ranking-item .ranking-number {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.page.p2 .ranking-box .ranking-item span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333;
 }
 /* css */
 
@@ -492,24 +543,23 @@ select {
   position: relative;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1416px;
   margin: 0 auto;
   margin-top: 80px;
 }
 .contents-box {
+  max-width: 1416px;
   display: flex;
   gap: 60px;
 }
 .contents-box .news-box .news-list {
-  height: 443px;
   border: 1px solid #D9D9D9;
   border-radius: 20px;
   margin-top: 29px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 45px 40px;
 }
 .section-header {
   display: flex;
@@ -524,10 +574,15 @@ select {
   display: flex;
   gap: 40px;
 }
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
 .nav-buttons button {
   background: none;
   border: none;
-  margin-left: 10px;
   color: #666;
   cursor: pointer;
 }
@@ -542,61 +597,51 @@ select {
 .news-list .news-item:hover {
   background-color: #f9f9f9;
 }
+.news-list .news-item .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .news-category {
-  width: 82px;
-  height: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
   font-size: 16px;
   margin-right: 30px;
-}
-.news-category.public {
-  background-color: #003E76;
-  color: white;
-}
-.news-category.research {
-  background-color: #61B85D;
-  color: white;
-}
-.news-category.press {
-  background-color: #00B6CC;
-  color: white;
-}
-.news-category.education {
-  background-color: #00ADEC;
-  color: white;
-}
-.news-date {
-  color: #888;
-  font-size: 14px;
-}
-.ranking-box .ranking-item {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 5px 13px;
 }
 .ranking-number {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: #2563eb;
+  background-color: #00B6CC;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .ranking-number.inactive {
   background-color: #9ca3af;
 }
 .ranking-box .ranking-list {
-  height: 443px;
   border: 1px solid #D9D9D9;
   border-radius: 20px;
   margin-top: 29px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ranking-box .ranking-item {
+  width: 100%;
+  background-color: #F4F4F4;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 @media screen and (max-width: 1020px) {
   .contents-box {
