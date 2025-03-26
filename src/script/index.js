@@ -159,7 +159,7 @@ $(document).ready(function(){
 
 
 // main page 
-// main page navigation hover 
+// main page p1 navigation hover 
 $(document).ready(function(){
   $(".page.p1 .contents > .main-nav .topbar-title1").mouseover(function(){
     $(".page.p1 .top-bar .contents-sub.s1 .title-box").css('opacity', '1');
@@ -190,6 +190,32 @@ $(document).ready(function(){
   });
   $(".page.p1 .contents > .main-nav .topbar-title5").mouseout(function(){
     $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '0');
+  });
+});
+// main page p2 navigation hover
+$(document).ready(function(){
+  $(".nav-buttons button").click(function(){
+    // 모든 버튼에서 active 클래스 제거
+    $(".nav-buttons button").removeClass("active");
+    
+    // 클릭된 버튼에만 active 클래스 추가
+    $(this).addClass("active");
+
+    // 모든 news-list에서 active 클래스 제거
+    $(".news-list").removeClass("active");
+
+    // 해당 버튼에 맞는 news-list에 active 클래스 추가
+    if ($(this).hasClass("btn-1")) {
+      $(".news-list.l1").addClass("active");
+    } else if ($(this).hasClass("btn-2")) {
+      $(".news-list.l2").addClass("active");
+    } else if ($(this).hasClass("btn-3")) {
+      $(".news-list.l3").addClass("active");
+    } else if ($(this).hasClass("btn-4")) {
+      $(".news-list.l4").addClass("active");
+    } else if ($(this).hasClass("btn-5")) {
+      $(".news-list.l5").addClass("active");
+    }
   });
 });
 

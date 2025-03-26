@@ -2005,8 +2005,12 @@ span {
   font-family: "Pretendard Variable", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #333;
+  color: #666;
   letter-spacing: -0.04em;
+  transition: all 0.2s;
+}
+.page.p2 .news-box .news-list .news-item:hover .item span:nth-child(2) {
+  color: #000;
 }
 .page.p2 .news-box .news-list .news-item > .news-date {
   font-family: "Pretendard Variable", sans-serif;
@@ -2311,15 +2315,6 @@ select {
   display: flex;
   gap: 60px;
 }
-.contents-box .news-box .news-list {
-  border: 1px solid #D9D9D9;
-  border-radius: 20px;
-  margin-top: 29px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 45px 40px;
-}
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -2331,7 +2326,21 @@ select {
 }
 .section-header .list-box {
   display: flex;
+  align-items: center;
   gap: 40px;
+}
+.page.p2 .container .contents-box .section-header .list-box a {
+  width: 43px;
+  height: 43px;
+  background-color: #e9e9e9;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.page.p2 .container .contents-box .section-header .list-box a:hover {
+  transform: rotate(90deg);
 }
 .nav-buttons {
   display: flex;
@@ -2344,6 +2353,33 @@ select {
   border: none;
   color: #666;
   cursor: pointer;
+  position: relative;
+}
+.page.p2 .container .contents-box .news-box .section-header .nav-buttons > button.active {
+  color: #000;
+}
+.page.p2 .container .contents-box .news-box .section-header .nav-buttons button.active::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #00B6CC;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-radius: 100%;
+}
+.contents-box .news-box .news-list {
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px 40px;
+  display: none;
+}
+.page.p2 .container .contents-box .news-box .news-list.active {
+  display: flex;
 }
 .news-list .news-item {
   display: flex;
@@ -2382,7 +2418,7 @@ select {
   margin-right: 20px;
 }
 .ranking-number.inactive {
-  background-color: #9ca3af;
+  background-color: #9b9b9b;
 }
 .ranking-box .ranking-list {
   border: 1px solid #D9D9D9;
@@ -2400,6 +2436,14 @@ select {
   display: flex;
   align-items: center;
   padding: 10px;
+  transition: all 0.2s;
+}
+.ranking-box .ranking-item:hover {
+  background-color: #e4e4e4;
+}
+.page.p2 .ranking-box .ranking-item:hover span {
+  font-weight: 600;
+  color: #000;
 }
 @media screen and (max-width: 1020px) {
   .contents-box {
