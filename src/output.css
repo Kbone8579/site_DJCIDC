@@ -1956,6 +1956,7 @@ span {
   font-weight: 600;
   font-size: 44px;
   color: #333333;
+  margin-right: 20px;
 }
 .page.p2 .container .contents-box .news-box .section-header h2 p1 {
   font-family: "Pretendard Variable", sans-serif;
@@ -2008,6 +2009,9 @@ span {
   color: #666;
   letter-spacing: -0.04em;
   transition: all 0.2s;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page.p2 .news-box .news-list .news-item:hover .item span:nth-child(2) {
   color: #000;
@@ -2193,6 +2197,15 @@ span {
   justify-content: center;
   align-items: center;
 }
+.page.p1 .swiper-slide.s1 {
+  background-color: #d9d9d9;
+}
+.page.p1 .swiper-slide.s2 {
+  background-color: #c9c9c9;
+}
+.page.p1 .swiper-slide.s3 {
+  background-color: #b9b9b9;
+}
 .page.p1 .swiper-slide img {
   display: block;
   width: 100%;
@@ -2376,6 +2389,7 @@ select {
   flex-direction: column;
   justify-content: center;
   padding: 45px 40px;
+  overflow: hidden;
   display: none;
 }
 .page.p2 .container .contents-box .news-box .news-list.active {
@@ -2448,16 +2462,47 @@ select {
 @media screen and (max-width: 1020px) {
   .contents-box {
     flex-direction: column;
+    margin: 0 23px;
   }
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .news-box .section-header {
+    justify-content: end;
+    align-items: center;
+  }
+  .news-box .section-header .list-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-header .list-box .nav-buttons {
+    gap: 40px;
   }
   .nav-buttons {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .news-box .section-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .section-header .list-box {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .section-header .list-box .nav-buttons {
+    gap: 20px;
+    justify-content: start;
+  }
+  .page.p2 .news-box .news-list .news-item .item span:nth-child(2) {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .page.p2 .news-box .news-list .news-item .item span:nth-child(2) {
+    width: 150px;
   }
 }
 @property --tw-translate-x {
