@@ -192,6 +192,15 @@ $(document).ready(function(){
     $(".page.p1 .top-bar .contents-sub.s5 .title-box").css('opacity', '0');
   });
 });
+
+// sub-menu
+$(document).ready(function(){
+  $(".sub-menu-btn").click(function(){
+    $(".sub-menu-btn").toggleClass("active")
+  });
+  
+});
+
 // main page p2 navigation hover
 $(document).ready(function(){
   $(".nav-buttons button").click(function(){
