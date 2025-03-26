@@ -734,6 +734,22 @@ select {
     left: 50%;
     transform: translateX(-50%);
   } */
+
+  /* page p2 */
+  .page.p2 .section-header .list-box {
+    gap: 10px;
+  }
+  .page.p2 .nav-buttons {
+    gap: 30px;
+  }
+  .page.p2 .news-box .news-list .news-item .item span:nth-child(2) {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .page.p2 .nav-buttons {
+    gap: 8px;
+  }
 }
 @media screen and (max-width: 1021px) {
   /* page p1 */

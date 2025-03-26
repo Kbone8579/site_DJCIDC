@@ -225,10 +225,10 @@ $(document).ready(function(){
     // direction: "horizontal", // 1381px 이하에서는 가로 방향
     direction: "vertical",
     effect:'fade',
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
