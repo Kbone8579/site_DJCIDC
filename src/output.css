@@ -2059,6 +2059,16 @@ span {
   font-size: 20px;
   color: #000;
 }
+.page.p3 .slider .swiper-slide h1 p1 {
+  font-family: "Pretendard Variable", sans-serif;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: #ff7200;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 10px;
+}
 .page.p4 .contents .content-header h1 {
   font-family: "Pretendard Variable", sans-serif;
   font-weight: 700;

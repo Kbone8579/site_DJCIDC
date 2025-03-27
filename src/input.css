@@ -260,6 +260,16 @@ span {
   font-size: 20px;
   color: #000;
 }
+.page.p3 .slider .swiper-slide h1 p1 {
+  font-family: "Pretendard Variable", sans-serif;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: #ff7200;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 10px;
+}
 /* page p4 */
 .page.p4 .contents .content-header h1 {
   font-family: "Pretendard Variable", sans-serif;
@@ -1002,7 +1012,6 @@ select {
     left: 50%;
     transform: translateX(-50%);
   } */
-
   /* page p2 */
   .page.p2 .section-header .list-box {
     gap: 10px;
@@ -1046,11 +1055,13 @@ select {
     font-size: 22px;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .page.p2 .nav-buttons {
     gap: 8px;
   }
 }
+
 @media screen and (max-width: 1021px) {
   /* page p1 */
   .page.p1 .top-bar.main {
@@ -1081,9 +1092,9 @@ select {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
+  }  
 }
+
 @media screen and (max-width: 871px) {
   /* page p1 */
   .page.p1.sub {
@@ -1120,7 +1131,6 @@ select {
     border-radius: 10px;
     margin-bottom: 20px;
   }
-
   /* page p2 */
   .page.p2 .news-box .section-header {
     flex-direction: column;
@@ -1138,12 +1148,12 @@ select {
     width: 250px;
   }
 }
+
 @media screen and (max-width: 641px) {
   /* page p2 */
   .page.p2 .news-box .news-list .news-item .item span:nth-child(2) {
     width: 150px;
   }
-
   /* page p4 */
   .page.p4 .content-grid {
     grid-template-columns: 1fr 1fr;
