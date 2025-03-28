@@ -308,3 +308,77 @@ function slider(){
       }
   });
 }
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainVideos = document.querySelectorAll('.main-video .video');
+  const subVideos = document.querySelectorAll('.sub-video .video');
+  const mainVideoScreen = document.querySelector('.main-video .video-screen');
+
+  // Set initial state: sub-video v1 screen is transparent
+  const subV1VideoScreen = document.querySelector('.sub-video .video.v1 .video-screen, .sub-video .video.v4 .video-screen, .sub-video .video.v7 .video-screen');
+  if (subV1VideoScreen) {
+      subV1VideoScreen.style.opacity = '0';
+  }
+
+  subVideos.forEach((subVideo, index) => {
+      subVideo.addEventListener('click', () => {
+          // Hide all main videos
+          mainVideos.forEach(video => {
+              video.style.opacity = '0';
+          });
+
+          // Show clicked video in main video area
+          const targetMainVideo = document.querySelector(`.main-video .video.v${index + 1}`);
+          if (targetMainVideo) {
+              targetMainVideo.style.opacity = '1';
+          }
+
+          // Reset all sub-video screens to opaque
+          document.querySelectorAll('.sub-video .video-screen').forEach(screen => {
+              screen.style.opacity = '1';
+          });
+
+          // Make clicked sub-video screen transparent
+          const videoScreen = subVideo.querySelector('.video-screen');
+          if (videoScreen) {
+              videoScreen.style.opacity = '0';
+          }
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.content-btn .btn');
+  const videoSections = document.querySelectorAll('.content-video');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      // Remove display block from all video sections
+      videoSections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Add active class to clicked button
+      button.classList.add('active');
+
+      // Show corresponding video section
+      if (button.classList.contains('s1')) {
+        document.querySelector('.content-video.v1').style.display = 'grid';
+      } else if (button.classList.contains('s2')) {
+        document.querySelector('.content-video.v2').style.display = 'grid';
+      } else if (button.classList.contains('s3')) {
+        document.querySelector('.content-video.v3').style.display = 'grid';
+      }
+    });
+  });
+
+  // Initially show the first section (영상자료)
+  document.querySelector('.btn.s1').click();
+});
