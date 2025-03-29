@@ -382,3 +382,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initially show the first section (영상자료)
   document.querySelector('.btn.s1').click();
 });
+
+
