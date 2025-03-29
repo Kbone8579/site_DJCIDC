@@ -357,6 +357,15 @@ span {
   font-size: 20px;
   letter-spacing: -0.03em;
 }
+
+/* page p7 */
+.page.p7 .address span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  color: #C8C8C8;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
 /* css */
 
 /* page p1 */
@@ -689,7 +698,7 @@ span {
   font-weight: bold;
 }
 
-select {
+.page.p1 select {
   padding: 10px;
   border: 1px solid #eee;
   border-radius: 10px;
@@ -961,7 +970,7 @@ select {
 /* page p4 */
 .page.p4 {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: url(img/page-4/img-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1401,7 +1410,7 @@ select {
 /* page p6 */
 .page.p6 {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: url(img/page-6/img-1.jpg);
   background-position: center;
   background-size: cover;
@@ -1491,98 +1500,95 @@ select {
   /* grid-template-columns: repeat(2, 1fr); */
 }
 
-
+/* page p7 */
 .page.p7 {
   width: 100%;
   max-height: 100vh;
+  background-color: #5e6266;
 }
 /* Footer styles */
-.footer-container {
+.page.p7 .footer-container {
   background-color: #5e6266;
-  color: white;
-  width: 100%;
-  padding: 20px 0;
+  max-width: 1416px;
+  margin: 0 auto;
+  padding: 58px 23px;
 }
 
 /* Logo and navigation section */
-.footer-nav {
+.page.p7 .footer-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  align-items: end;
+  padding: 20px 0px;
 }
 
-.footer-logo {
+.page.p7 .footer-logo {
   color: #1a73e8;
   font-weight: bold;
   font-size: 18px;
 }
 
-.footer-logo span {
-  color: white;
-  margin-left: 5px;
-}
-
-.footer-menu {
+.page.p7 .footer-menu {
   display: flex;
 }
 
-.footer-menu-item {
-  margin-left: 20px;
+.page.p7 .footer-menu-item {
+  color: #C8C8C8;
+  margin-left: 29px;
   font-size: 14px;
+}
+.page.p7 .footer-menu-item:hover {
+  color: white;
 }
 
 /* Contact information box */
-.contact-box {
+.page.p7 .contact-box {
   background-color: white;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  border-radius: 5px;
+  padding: 15px 0;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 40px;
 }
 
-.contact-info {
+.page.p7 .contact-info {
   display: flex;
 }
 
-.phone-label {
+.page.p7 .phone-label {
   color: #333;
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 13px;
 }
 
-.phone-number {
-  color: #000;
-  font-weight: bold;
-  margin-right: 30px;
-}
-
-.fax-label {
+.page.p7 .phone-number {
   color: #333;
   font-weight: bold;
-  margin-right: 5px;
+}
+.page.p7 .line {
+  color: #333;
+  margin: 0px 30px;
+}
+.page.p7 .fax-label {
+  color: #333;
+  font-weight: bold;
+  margin-right: 13px;
 }
 
-.fax-number {
-  color: #000;
+.page.p7 .fax-number {
+  color: #333;
   font-weight: bold;
 }
 
-.social-icon {
+.page.p7 .social-icon {
   color: #e1306c;
   font-size: 24px;
 }
 
 /* Address and copyright section */
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.page.p7 .footer-bottom {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1590,110 +1596,38 @@ select {
   color: #ddd;
 }
 
-.address {
-  line-height: 1.5;
+.page.p7 .address {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.page.p7 .address span {
+  color: #C8C8C8;
+  font-size: 17px;
+  letter-spacing: -0.01em;
 }
 
-.related-sites {
-  background-color: #4a4d50;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #666;
+.page.p7 .related-sites {
+  color: #C8C8C8;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 1px solid #E8E8E8;
   display: flex;
   align-items: center;
 }
-
-.related-sites-text {
+.page.p7 select {
+  font-size: 15px;
+}
+.page.p7 select  option {
+  color: #333;
+}
+.page.p7 .related-sites-text {
   margin-right: 10px;
 }
 
-.arrow-icon {
+.page.p7 .arrow-icon {
   font-size: 14px;
 }
-
-/* Responsive styles */
-@media screen and (max-width: 1021px) {
-  .footer-nav, .contact-box, .footer-bottom {
-      padding: 15px;
-      max-width: 100%;
-  }
-  
-  .footer-logo {
-      font-size: 16px;
-  }
-  
-  .footer-menu-item {
-      margin-left: 15px;
-      font-size: 13px;
-  }
-  
-  .address {
-      font-size: 11px;
-  }
-  
-  .related-sites {
-      padding: 8px 12px;
-      font-size: 11px;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  .footer-nav {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  
-  .footer-logo {
-      margin-bottom: 15px;
-  }
-  
-  .footer-menu {
-      flex-wrap: wrap;
-  }
-  
-  .footer-menu-item {
-      margin-left: 0;
-      margin-right: 15px;
-      margin-bottom: 8px;
-      font-size: 12px;
-  }
-  
-  .contact-box {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  
-  .contact-info {
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-  }
-  
-  .phone-number {
-      margin-right: 10px;
-  }
-  
-  .social-icon {
-      align-self: flex-end;
-      margin-top: -30px; /* Adjust to position icon correctly */
-  }
-  
-  .footer-bottom {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  
-  .address {
-      margin-bottom: 15px;
-      font-size: 11px;
-  }
-  
-  .related-sites {
-      width: 100%;
-      justify-content: space-between;
-  }
-}
-
 
 
 /* media */
@@ -1731,6 +1665,9 @@ select {
     width: 100%;
     height: 108px;
     border-radius: 10px;
+  }
+  .page.p1 .top-bar .contents-sub .title-box {
+    display: none;
   }
   /* .page.p1 .swiper-box-1 .swiper .swiper-pagination.swiper-pagination-bullets {
     width: 100%;
@@ -1790,10 +1727,15 @@ select {
     padding-right: 23px;
   }
   /* page p6 */
-.page.p6 .services-grid {
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
+  .page.p6 {
+    width: 100%;
+    max-height: 200vh;
+  }
+  .page.p6 .services-grid {
+   grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -1850,7 +1792,34 @@ select {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }  
+  } 
+
+  /* page p7 */
+  .page.p7 .footer-nav, .page.p7 .contact-box, .page.p7 .footer-bottom {
+    max-width: 100%;
+}
+
+.page.p7 .footer-logo {
+    font-size: 16px;
+}
+
+.page.p7 .footer-menu-item {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.page.p7 .address span {
+    font-size: 11px;
+}
+
+.page.p7 .related-sites {
+    padding: 8px 12px;
+    font-size: 11px;
+}
+.page.p7 select {
+  font-size: 11px;
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 871px) {
@@ -1934,5 +1903,53 @@ select {
     font-size: 20px;
     margin-bottom: 29px;
   }
-  
+  .page.p4 {
+    max-height: 200vh;
+  }
+  /* page p7 */
+  .page.p7 .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page.p7 .footer-logo {
+    margin-bottom: 15px;
+}
+
+.page.p7 .footer-menu {
+    flex-wrap: wrap;
+}
+
+.page.p7 .footer-menu-item {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.page.p7 .contact-box {
+    align-items: center;
+}
+.page.p7 .social-icon img {
+  width: 20px;
+  height: 21px;
+}
+
+.page.p7 .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page.p7 .address {
+  gap: 10px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+
+.page.p7 .related-sites {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 }
