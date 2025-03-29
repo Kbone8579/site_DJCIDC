@@ -384,3 +384,57 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//협력하는 기관 스와이퍼
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Swiper
+  const partnersSwiper = new Swiper('.partners', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+      },
+      navigation: {
+          nextEl: '.partners-button-next',
+          prevEl: '.partners-button-prev',
+      },
+      breakpoints: {
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 10
+          },
+          576: {
+              slidesPerView: 2,
+              spaceBetween: 15
+          },
+          768: {
+              slidesPerView: 3,
+              spaceBetween: 15
+          },
+          992: {
+              slidesPerView: 4,
+              spaceBetween: 20
+          },
+          1200: {
+              slidesPerView: 5,
+              spaceBetween: 20
+          }
+      }
+  });
+  
+  // Pause/Play button functionality
+  const pauseButton = document.querySelector('.partners-button-pause');
+  let isPlaying = true;
+  
+  pauseButton.addEventListener('click', function() {
+      if (isPlaying) {
+          partnersSwiper.autoplay.stop();
+          pauseButton.classList.add('play');
+      } else {
+          partnersSwiper.autoplay.start();
+          pauseButton.classList.remove('play');
+      }
+      isPlaying = !isPlaying;
+  });
+});
