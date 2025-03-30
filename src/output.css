@@ -1815,6 +1815,7 @@
 }
 body {
   white-space: nowrap;
+  position: relative;
 }
 span {
   display: block;
@@ -2390,7 +2391,7 @@ span {
 .page.p1 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   object-fit: cover;
 }
 .page.p1 .swiper-box-1 .swiper .swiper-pagination.swiper-pagination-bullets {
@@ -3234,19 +3235,19 @@ span {
   background-color: #61B85D;
   color: white;
 }
-.partners-container {
+.page.p6 .partners-container {
   margin-top: 150px;
   display: flex;
   align-items: center;
   gap: 52px;
 }
-.partners.swiper {
+.page.p6 .partners.swiper {
   width: 100%;
   height: 100px;
   position: relative;
   padding-top: 15px;
 }
-.partners .swiper-slide {
+.page.p6 .partners .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -3258,20 +3259,20 @@ span {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
-.partners .swiper-slide:hover {
+.page.p6 .partners .swiper-slide:hover {
   transform: translateY(-3px);
 }
-.partners .swiper-slide img {
+.page.p6 .partners .swiper-slide img {
   max-width: 100%;
   max-height: 90%;
   object-fit: contain;
 }
-.partners-controls {
+.page.p6 .partners-controls {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.partners-button-prev, .partners-button-next {
+.page.p6 .partners-button-prev, .page.p6 .partners-button-next {
   position: static;
   width: 31px;
   height: 31px;
@@ -3285,7 +3286,7 @@ span {
   justify-content: center;
   cursor: pointer;
 }
-.partners-button-pause {
+.page.p6 .partners-button-pause {
   width: 31px;
   height: 31px;
   background-color: #fff;
@@ -3298,12 +3299,12 @@ span {
   justify-content: center;
   cursor: pointer;
 }
-.partners-button-pause:after {
+.page.p6 .partners-button-pause:after {
   content: '\275A\ \275A';
   font-size: 11px;
   letter-spacing: -1px;
 }
-.partners-button-pause.play:after {
+.page.p6 .partners-button-pause.play:after {
   content: '\25B6';
 }
 .page.p7 {
@@ -3414,6 +3415,34 @@ span {
 }
 .page.p7 .arrow-icon {
   font-size: 14px;
+}
+.contents-navigation {
+  width: 96px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+}
+.contents-navigation .top-btn {
+  width: 68px;
+  height: 68px;
+  background-color: #00B6CC;
+  opacity: 60%;
+  border-radius: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+.contents-navigation .top-btn:hover {
+  opacity: 100%;
+}
+.contents-navigation .top-btn i {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 1381px) {
   .page.p1 .top-bar .contents {
@@ -3698,6 +3727,9 @@ span {
     width: 100%;
     justify-content: space-between;
     margin-top: 20px;
+  }
+  .contents-navigation {
+    display: hidden;
   }
 }
 @property --tw-translate-x {

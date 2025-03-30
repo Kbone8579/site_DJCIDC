@@ -233,10 +233,10 @@ $(document).ready(function(){
     direction: "vertical",
     effect:'fade',
     loop: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
@@ -438,3 +438,5 @@ document.addEventListener('DOMContentLoaded', function() {
       isPlaying = !isPlaying;
   });
 });
+
+//top-bar sticky 
