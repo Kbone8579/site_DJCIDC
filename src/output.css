@@ -1053,6 +1053,9 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#5e6266\] {
+    background-color: #5e6266;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
@@ -3310,7 +3313,6 @@ span {
 .page.p7 {
   width: 100%;
   max-height: 100vh;
-  background-color: #5e6266;
 }
 .page.p7 .footer-container {
   background-color: #5e6266;
