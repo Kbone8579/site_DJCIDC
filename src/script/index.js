@@ -446,25 +446,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // mobile-side
 $(document).ready(function(){
   // 모바일 사이드바 열기
-function MobileSideBar__show() {
-  // 모바일 사이드바 보여지도록 처리
-  $(".mobile-side-bar").addClass("active");
-  // html, body 수준에서 스크롤바 잠금
-  $("html").addClass("mobile-side-bar-actived");
-}
+  function MobileSideBar__toggle() {
+    $(".mobile-side-bar").toggleClass("active");
+    $("html").toggleClass("mobile-side-bar-actived");
+  }
 
-// 모바일 사이드바 닫기
-function MobileSideBar__hide() {
-  // 모바일 사이드바 숨겨지도록 처리
-  $(".mobile-side-bar").removeClass("active");
-  // html, body 수준에서 스크롤바 잠금해제
-  $("html").removeClass("mobile-side-bar-actived");
-}
+  function MobileSideBar__hide() {
+    // 모바일 사이드바 숨겨지도록 처리
+    $(".mobile-side-bar").removeClass("active");
+    $(".page.p1 .top-bar .sub-menu-btn").removeClass("active");
+    // html, body 수준에서 스크롤바 잠금해제
+    $("html").removeClass("mobile-side-bar-actived");
+  }
 
-// 三 버튼 클릭시 모바일사이드바 보여지도록 설정
-$(".sub-menu-btn").click(MobileSideBar__show);
-// 모바일사이드바 혹은 x버튼을 클릭하면 모바일사이드바가 숨겨지도록 설정
-$(".sub-menu-btn").click(MobileSideBar__hide);
+  // .sub-menu-btn 클릭 시 사이드바 토글
+  $(".sub-menu-btn").click(MobileSideBar__toggle);
+  $(".mobile-side-bar").click(MobileSideBar__hide);
 
 // 모바일사이드바의 콘텐트 부분을 클릭해도 모바일사이드바 숨겨지지 않도록 설정
 $(".mobile-side-bar__content").click(function () {

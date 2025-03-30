@@ -583,7 +583,7 @@ span {
   width: 100%;
   height: 100vh;
   inset: 0;
-  visibility: invisible;
+  visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s;
   background-color: rgba(0, 0, 0, 0.5);
@@ -600,7 +600,7 @@ span {
   height: 100vh;
   background-color: white;
   margin-left: auto;
-  transform: translateX(0);
+  transform: translateX(100%);
   transition: transform 0.3s;
 }
 .mobile-side-bar.active .mobile-side-bar__content {
@@ -1924,6 +1924,14 @@ span {
   .page.p1 .top-bar.sub {
     visibility: visible;
   }
+  /* side-menu */
+  html.mobile-side-bar-actived,
+  html.mobile-side-bar-actived > body {
+    overflow: hidden;
+  }
+  .mobile-side-bar {
+    display: block;
+  } 
   /* page p2 */
   .page.p2 .contents-box {
     flex-direction: column;
