@@ -1957,6 +1957,24 @@ span {
   font-weight: 600;
   font-size: 24px;
 }
+.mobile-side-bar__head .content-site a {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #494949;
+  transition: all 0.2s;
+}
+.mobile-side-bar__head .content-site a:hover {
+  font-weight: 500;
+  color: #333;
+}
+.mobile-side-bar__body .mobile-menu-box-1 > ul > li > a {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #444;
+  transition: all 0.2s;
+}
 .page.p2 .container .contents-box .news-box .section-header h2 {
   font-family: "Pretendard Variable", sans-serif;
   font-weight: 600;
@@ -2386,7 +2404,10 @@ span {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: white;
+  background-image: url(img/page-1/side-bar-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: auto;
   transform: translateX(100%);
   transition: transform 0.3s;
@@ -2451,7 +2472,8 @@ span {
 }
 .mobile-menu-box-1 > ul ul {
   display: none;
-  background-color: rgba(120, 120, 120, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .mobile-menu-box-1 ul > li.active > ul {
   display: block;
@@ -2459,6 +2481,14 @@ span {
 .mobile-menu-box-1 ul > li > a {
   display: block;
   padding: 30px 28px;
+  transition: all 0.2s;
+}
+.mobile-menu-box-1 ul > li > a:hover {
+  background-color: #003E76;
+  color: white;
+}
+.mobile-menu-box-1 ul > li > ul >li > a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .mobile-menu-box-1 ul > li.active > a:not(:only-child) {
   background-color: #003E76;
